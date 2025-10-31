@@ -983,6 +983,60 @@ span.post_cat {
   text-align: center;
   border-top: 1px #e7e6e6 solid;
 }
+
+/* Photos Grid Styles */
+.photos_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.photo_card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 3/4; /* Portrait orientation - more height than width */
+}
+
+.photo_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.photo_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo_card:hover img {
+  transform: scale(1.1);
+}
+
+.photo_card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .photos_grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .photos_grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+}
 .commentlist {
   padding: 0;
   margin: 0px 0 40px 0;
@@ -1074,7 +1128,8 @@ img.avatar {
   height: auto;
 }
 .general_header {
-  background: url(images/header.jpg) no-repeat center center;
+  background: url(images/couple_looking_at_each_other.jpg) no-repeat center 40%;
+  background-size: cover;
 }
 .contact_header {
   background: url(images/couple_looking_at_each_other.jpg) no-repeat center 40%;
@@ -1948,7 +2003,7 @@ span.swirl_right_transparent {
     margin: 0px;
   }
   .checkbox_container {
-    width: \95%;
+    width: 95%;
     float: left;
     clear: both;
     text-align: left;
