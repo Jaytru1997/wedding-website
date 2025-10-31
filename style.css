@@ -159,7 +159,7 @@ ul#main_menu li a,
 .title_date,
 .title_under,
 span.countdown_amount,
-.GIFT REGISTRY_button {
+.gift_button {
   font-family: "Open Sans", sans-serif;
 }
 .title,
@@ -524,16 +524,16 @@ span.countdown_amount {
   font-weight: 700;
   letter-spacing: -0.5px;
 }
-.GIFT REGISTRY_button {
+.gift_button {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   margin: 0 0 60px 0;
 }
-.GIFT REGISTRY_button a {
+.gift_button a {
   color: #ffffff;
 }
-.GIFT REGISTRY_button a:hover {
+.gift_button a:hover {
   color: #5d594d;
 }
 span.swirl_left_small {
@@ -1011,6 +1011,61 @@ span.post_cat {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+/* How We Met Section Styles */
+.how_we_met {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.how_we_met h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #5d594d;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.how_we_met h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #b5af47;
+  margin: 15px auto 0;
+}
+
+.how_we_met p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6e6a5f;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.how_we_met .post_read_more {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .how_we_met {
+    padding: 40px 20px;
+  }
+
+  .how_we_met h2 {
+    font-size: 28px;
+  }
+
+  .how_we_met p {
+    font-size: 15px;
+    text-align: left;
+  }
 }
 
 .photo_card:hover img {
