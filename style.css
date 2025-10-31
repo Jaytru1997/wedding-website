@@ -159,7 +159,7 @@ ul#main_menu li a,
 .title_date,
 .title_under,
 span.countdown_amount,
-.gift_button {
+.registry {
   font-family: "Open Sans", sans-serif;
 }
 .title,
@@ -524,16 +524,16 @@ span.countdown_amount {
   font-weight: 700;
   letter-spacing: -0.5px;
 }
-.gift_button {
+.registry {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   margin: 0 0 60px 0;
 }
-.gift_button a {
+.registry a {
   color: #ffffff;
 }
-.gift_button a:hover {
+.registry a:hover {
   color: #5d594d;
 }
 span.swirl_left_small {
